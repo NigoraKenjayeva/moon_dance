@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.input {
+    width: 500px;
+    max-width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: 2px solid #EDEEF1;
+    padding-left: 30px;
+    outline: none;
+}
+.input::placeholder {
+    font-size: 17px;
+    color: #bcbdc0;
+}
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    background-color: #FF1616;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+}
+.btn:hover{
+    background-color: #CF0F0F;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #EDEEF1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .input {
+        display: none;
+    }
+    .faq {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+@media (max-width: 834px) {
+    .input {
+        display: none;
+    }
+    .faq {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+.header{
+    width: 100%;
+    height: 700px;
+    background-color: #FEF4F4;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+}
+.href{
+    display: flex;
+    gap: 50px;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.splide__progress__bar {
+    height: 3px;
+    background: #ccc;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .btn2 {
+    width: 70px;
+    background-color:#FEF4F4;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .btn2.open .icon {
+    transform: rotate(45deg);
+  }
+  
+  .content {
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+  }
+  
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    gap: 10px;
+    a{
+        font-size: 15px;
+    }
+}
+  
+  button {
+    background:#FEF4F4;
+    height:40px;
+    border:0;
+    border-radius:5px;
+    color:#000000;
+    font-size: 20px;
+    padding:0 15px;
+    cursor:pointer;
+  }
+  
+  dialog{
+    width:120px;
+    max-height:400px;
+    padding:30px 30px 70px 30px;
+    color: black;
+    border:0;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    border-radius:5px;
+    position:relative;  
+  }
+  dialog p:hover{
+    color: #CF0F0F;
+    cursor: pointer;
+  }
+  
+  dialog button{
+    position:absolute;
+    bottom:20px;
+    background:#000000;
+    color:#ffffff;
+  }
+  p{
+    color:#aaa;
+    padding-bottom:10px;
+    line-height:2;
+    font-size:14px;
+  }
