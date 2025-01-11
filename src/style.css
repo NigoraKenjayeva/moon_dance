@@ -1,0 +1,116 @@
+.sign,
+.sign *,
+.sign :after,
+.sign :before,
+.sign:after,
+.sign:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.sign {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ff1616;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.sign:disabled {
+  cursor: default;
+}
+.sign:-moz-focusring {
+  outline: auto;
+}
+.sign svg {
+  display: block;
+  vertical-align: middle;
+}
+.sign [hidden] {
+  display: none;
+}
+.sign {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.sign .new {
+  display: grid;
+  inset: 0;
+  place-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+.sign:hover .new {
+  background-color: #cf0f0f;
+  transform: translateX(0);
+}
+.section {
+  height: 1000px;
+}
+.bg-header {
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+.splide__pagination {
+  display: flex;
+  gap: 0.5rem;
+}
+.splide__pagination__page.is-active {
+  background-color: #fff;
+}
+.img {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 600px
+}
+.image1 {
+  background-image: url(../assets/img/hero1.webp);
+}
+.image2 {
+  background-image: url(../assets/img/hero2.webp);
+}
+.image3 {
+  background-image: url(../assets/img/hero3.webp);
+}
+.splide__arrow--next svg:hover, .splide__arrow--prev svg:hover {
+  fill: #FF1616;
+  cursor: pointer;
+}
+.splide__arrow--next svg, .splide__arrow--prev svg {
+  fill: #BBBFCC;
+  width: 80px;
+}
+.splide__arrow--prev {
+  position: absolute;
+  left: -30px;
+  background: transparent;
+}
+.splide__arrow--next {
+  position: absolute;
+  right: -30px;
+  background: transparent;
+}
+.book {
+  width: 200px;
+}
